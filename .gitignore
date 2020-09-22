@@ -1,0 +1,8 @@
+tclient/tclient
+tserver/tserver
+*~
+*.pyc
+*.sw?
+*.orig
+*.diff
+*.sw?
