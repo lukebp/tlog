@@ -12,7 +12,10 @@ mkdir $GOPATH/src/github.com/google/
 cd $GOPATH/src/github.com/google/
 git clone git@github.com:google/trillian.git
 cd trillian
-go build ./...
+// If building in a folder under GOPATH, it is necessary to explicitly build 
+// with modules enabled
+export GO111MODULE=on
+go install ./...
 ```
 
 Reset the test database
