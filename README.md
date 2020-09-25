@@ -12,7 +12,8 @@ mkdir $GOPATH/src/github.com/google/
 cd $GOPATH/src/github.com/google/
 git clone git@github.com:google/trillian.git
 cd trillian
-go get -t -u -v ./...
+export GO111MODULE=on
+go install ./...
 ```
 
 Reset the test database
